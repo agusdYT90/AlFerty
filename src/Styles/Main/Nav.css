@@ -1,0 +1,77 @@
+.nav {
+     display: flex;
+     margin-right: 20px;
+}
+
+.nav ul {
+     list-style: none;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding: 0px;
+     margin: 10px;
+     gap: 10px;
+}
+
+.Link {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-decoration: none;
+     padding: 5px;
+     color: var(--letras-color2);
+     font-size: var(--letras-link);
+     font-family: var(--letras-tipo1);
+     position: relative;
+}
+
+.Link::after {
+     content: "";
+     position: absolute;
+     bottom: -2px;
+     width: 0;
+     height: 2px;
+     background-color: var(--letras-color4);
+     transition: width 0.3s ease-in-out;
+}
+
+.Link:hover {
+     color: var(--letras-color4);
+     transition: color 0.3s ease-in-out;
+}
+
+.Link:hover::after {
+     width: 100%;
+}
+
+.img-perfil {
+     border: 3px solid transparent;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     object-fit: cover;
+     transition: border 0.3s ease-in-out;
+}
+
+.img-perfil:hover {
+     border: 3px solid var(--fondo4);
+}
+
+/* ~600px */
+@media (max-width: 37.5em) {
+     .nav {
+          display: none;
+     }
+}
+
+/* ~601px a 1024px */
+@media (min-width: 37.6em) and (max-width: 64em) {
+     .nav {
+          display: none;
+     }
+}
+
+/* ~1025px en adelante */
+@media (min-width: 64.1em) {}

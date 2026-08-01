@@ -1,0 +1,38 @@
+.sidebar {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100vh;
+     background-color: #131313d2;
+     color: white;
+     transition: transform 0.5s ease-in-out;
+}
+
+.NavSidebar {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin-top: 125px;
+}
+
+.NavSidebar ul {
+     list-style: none;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding: 0px;
+     margin: 10px;
+     gap: 20px;
+}
+
+.sidebar.false {
+     transform: translateX(-100%);
+}
+
+.sidebar.true {
+     transform: translateX(0);
+}

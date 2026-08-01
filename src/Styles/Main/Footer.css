@@ -1,0 +1,12 @@
+.footer {
+     color: var(--letras-color1);
+     font-size: var(--letra-parrafo);
+     font-family: var(--letras-tipo1);
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 75px;
+     background: linear-gradient(125deg, var(--fondo3), var(--fondo4));
+}
