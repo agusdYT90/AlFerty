@@ -1,5 +1,5 @@
 {
-  "name": "aguscom",
+  "name": "AlFerty",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -26,5 +26,11 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
     "vite": "^6.2.0"
+  },
+  "allowScripts": {
+    "esbuild@0.25.2": true,
+    "protobufjs@7.6.5": true,
+    "firebase@11.10.0": true,
+    "@firebase/util@1.12.1": true
   }
 }

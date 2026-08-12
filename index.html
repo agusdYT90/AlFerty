@@ -1,17 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba Discord Webhook</title>
+</head>
+<body>
+  <h1>Enviar mensaje a Discord</h1>
+  <form id="discordForm">
+    <label for="message">Mensaje:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+    <button type="submit">Enviar</button>
+  </form>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Tienda de productos | AgusCom"/>
-    <link rel="icon" href="/favicon.ico">
-    <title>AgusCom</title>
-  </head>
+  <script>
+    const form = document.getElementById("discordForm");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const message = document.getElementById("message").value;
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-  
+      try {
+        const res = await fetch("https://alferty-back.vercel.app/notification/discord", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message })
+        });
+
+        const data = await res.json();
+        alert("Respuesta del servidor: " + JSON.stringify(data));
+      } catch (err) {
+        alert("Error: " + err.message);
+      }
+    });
+  </script>
+</body>
 </html>
