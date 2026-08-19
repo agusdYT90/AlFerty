@@ -9,7 +9,6 @@ function RoutesMain() {
 
      return (
           <Router>
-               <ScrollToTop />
                <Routes>
                     <Route>
                          {[...RutasPublic, ...RutasPriv].map(({ Direccion, Elemento }) => (
