@@ -1,12 +1,6 @@
 // TestProducts.jsx
 import React, { useState } from "react";
-import {
-    getAllProducts,
-    getProductById,
-    createProduct,
-    updateProduct,
-    deleteProduct
-} from "./products.js";
+import {getAllProducts, getProductById, createProduct, updateProduct, deleteProduct} from "../../Services/DB/Products.js";
 
 export default function TestProducts() {
     const [output, setOutput] = useState("");
