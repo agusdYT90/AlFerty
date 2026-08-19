@@ -1,7 +1,6 @@
-import logo from "../../assets/Imgs/Logo (Signo).webp";
-import letralogo from "../../assets/Imgs/Logo (Letras).webp";
 import { Link } from "react-router-dom";
-import { UpScroll } from "../../Hooks/UseScroll";
+import logo from "../../assets/Imgs/AlFertronic.jpg";
+import letralogo from "../../assets/Imgs/AlFerty.jpg";
 import Nav from "./Nav";
 import "../../Styles/Main/Header.css";
 
@@ -11,7 +10,7 @@ function Header({ Cambiar, Mostrar}) {
           <header className="header">
                <div className="header-container">
 
-                    <Link to={"/"} className="logo" onClick={UpScroll}>
+                    <Link to={"/"} className="logo">
                          <img src={logo} alt="AgusCom-Logo" className="l1" />
                          <img src={letralogo} alt="AgusCom-Logo" className="l2" />
                     </Link>

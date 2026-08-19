@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { UpScroll } from "../../Hooks/UseScroll";
 import RoutesNav from "../../Hooks/UseRoutesNav";
 import "../../Styles/Main/Sidebar.css";
 
@@ -13,7 +12,7 @@ function Sidebar({ Cambiar, Mostrar }) {
                     <ul>
                     {Rutas.map(({ Direccion, Class, Texto }) => (
                          <li key={Direccion}>
-                              <Link to={Direccion} onClick={() => { UpScroll(); Cambiar() }} className={Class}>{Texto}</Link>
+                              <Link to={Direccion} className={Class}>{Texto}</Link>
                          </li>
                     ))}
                </ul>
