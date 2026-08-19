@@ -1,10 +1,10 @@
-import ManagementCrud from "../Components/Management/ManagementCrud.jsx";
+
 
 function Management() {
 
      return (
           <>
-               <ManagementCrud/>
+               <h1>Management Page</h1>
           </>
      );
 }

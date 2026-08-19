@@ -3,7 +3,7 @@ import "../../Styles/Main/Main.css";
 function Main() {
      return (
           <main className="main">
-               <h1>Aguscom</h1>
+               <h1>AlFerty</h1>
           </main>
      );
 }
