@@ -1,20 +1,14 @@
 // TestProducts.jsx
 import React, { useState } from "react";
-import { getAllProducts, getProductById, createProduct, updateProduct, deleteProduct } from "../../Services/DB/Products.js";
+import {getAllProducts, getProductById, createProduct, updateProduct, deleteProduct} from "../../Services/DB/Products.js";
 
 export default function TestProducts() {
     const [output, setOutput] = useState("");
 
     const handleGetAll = async () => {
-        try {
-            const data = await getAllProducts();
-            setOutput(JSON.stringify(data, null, 2));
-        } catch (err) {
-            console.error("Error en handleGetAll:", err.message);
-            setOutput(err.message);
-        }
+        const data = await getAllProducts();
+        setOutput(JSON.stringify(data, null, 2));
     };
-
 
     const handleGetById = async () => {
         const data = await getProductById("123"); // prueba con un ID válido
