@@ -1,4 +1,4 @@
-import { API_URL } from "./Config.js";
+import { API_URL } from "../Config.js";
 
 const API_ENDPOINT = `${API_URL}/products`;
 
