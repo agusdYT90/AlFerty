@@ -1,8 +1,15 @@
-const API_URL = process.env.URLS_OKEY + "/products";
+const API_URL = "https://alferty-back.vercel.app/products";
 
 // Obtener todos los productos
 export async function getAllProducts() {
     const res = await fetch(API_URL);
+
+    if (!res.ok) {
+        // Para depuración: ver qué devuelve
+        const text = await res.text();
+        throw new Error(`Error HTTP ${res.status}: ${text}`);
+    }
+
     return await res.json();
 }
 
