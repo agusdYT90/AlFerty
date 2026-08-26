@@ -1,8 +1,7 @@
 :root {
-    --letras-color1: #131313;
+    --letras-color1: #3e016a;
     --letras-color2: #f8f8fa;
-    --letras-color3: #0077b6;
-    --letras-color4: #00b4d8;
+    --letras-color3: #000000;
 
     --letras-link: 20px;
     --letras-title: 25px;
@@ -12,23 +11,23 @@
     --letras-tipo1: 'Poppins', sans-serif;
     --letras-tipo2: 'Roboto', sans-serif;
 
-    --fondo1: #131313;
+    --fondo1: #3e016a;
     --fondo2: #f8f8fa;
-    --fondo3: #0077b6;
-    --fondo4: #00b4d8;
+    --fondo3: #000000;
 }
 
 body {
     margin: 0;
     padding: 0;
-    color: var(--letras-color2);
-    background-color: var(--fondo1);
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle at 50% 10%, #4b0082, #0a001a);
 }
 
 button {
     padding: 0.75rem 1.5rem;
-    background-color: var(--fondo2);
-    color: var(--fondo1);
+    background-color: var(--fondo1);
+    color: var(--fondo3);
     font-size: 1rem;
     font-weight: 500;
     border: none;
@@ -40,7 +39,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--fondo4);
+    background-color: var(--fondo2);
 }
 
 input {
@@ -61,6 +60,6 @@ input::placeholder {
 }
 
 input:focus {
-    border-color: #0077ff;
+    border-color: #3e016a;
     box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.2);
 }

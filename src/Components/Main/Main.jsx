@@ -3,7 +3,9 @@ import "../../Styles/Main/Main.css";
 function Main() {
      return (
           <main className="main">
-               <h1>AlFerty</h1>
+               <div className="main-container">
+                    <h1>Alferty</h1>
+               </div>
           </main>
      );
 }
