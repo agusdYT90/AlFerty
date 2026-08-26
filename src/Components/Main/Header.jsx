@@ -1,15 +1,17 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/Imgs/Logo/AlFerty-Logo-Letras.webp";
+import logo from "../../Assets/Imgs/Logo/AlFerty-Logo-Letras.webp";
 import Nav from "./Nav";
 import "../../Styles/Main/Header.css";
 
-function Header({ Cambiar, Mostrar}) {
+function Header({ Cambiar, Mostrar }) {
 
      return (
           <header className="header">
                <div className="header-container">
 
-                    <img src={logo} alt="AlFerty" className="l1" />
+                    <Link to="/" className="logo">
+                         <img src={logo} alt="AlFerty" className="l1" />
+                    </Link>
 
                     <Nav />
 
