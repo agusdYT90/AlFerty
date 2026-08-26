@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/Imgs/AlFertronic.jpg";
-import letralogo from "../../assets/Imgs/AlFerty.jpg";
+import logo from "../../assets/Imgs/AlFerty-Logo.webp";
+import letralogo from "../../assets/Imgs/AlFerty-Letras.webp";
 import Nav from "./Nav";
 import "../../Styles/Main/Header.css";
 
@@ -11,8 +11,8 @@ function Header({ Cambiar, Mostrar}) {
                <div className="header-container">
 
                     <Link to={"/"} className="logo">
-                         <img src={logo} alt="AgusCom-Logo" className="l1" />
-                         <img src={letralogo} alt="AgusCom-Logo" className="l2" />
+                         <img src={logo} alt="AlFerty-Logo" className="l1" />
+                         <img src={letralogo} alt="AlFerty-Letras" className="l2" />
                     </Link>
 
                     <Nav />
