@@ -10,6 +10,9 @@
      z-index: 0;
      font-size: 5rem;
      overflow: hidden;
+     opacity: 0;
+     transform: translateY(50px);
+     animation: aparecer 1.5s ease-out forwards;
 }
 
 @media (max-width: 37.5em) {
