@@ -2,8 +2,9 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     height: 100%;
      width: 100%;
+     height: 100vh;
+     max-height: 100vh;
 }
 
 .not-found-conteiner {
@@ -12,36 +13,36 @@
      justify-content: center;
      align-items: center;
      text-align: center;
-     padding: 8rem;
      opacity: 0;
+     padding: 2%;
+     transform: translateY(50px);
      animation: aparecer 1.5s ease-out forwards;
+     font-size: 2.5rem;
+     overflow: hidden;
 }
 
 .not-found-error {
      color: var(--letras-color3);
-     margin: 0;
-     margin: 25px;
-     font-size: 4rem;
+     margin: 10px;
 }
 
 .not-found-sub {
      color: var(--letras-color3);
      margin: 0;
-     margin-bottom: 100px;
-     font-size: 2rem;
+     font-size: 1.5rem;
+     margin-bottom: 25%;
 }
 
-.Link {
+.not-found-link {
+     position: relative;
      display: flex;
      align-items: center;
      justify-content: center;
      text-decoration: none;
      color: var(--letras-color3);
-     position: relative;
-     font-size: 2rem;
 }
 
-.Link::after {
+.not-found-link::after {
      content: "";
      position: absolute;
      bottom: -2px;
@@ -51,27 +52,18 @@
      transition: width 0.3s ease-in-out;
 }
 
-.Link:hover {
+.not-found-link:hover {
      color: var(--letras-color2);
      transition: color 0.3s ease-in-out;
 }
 
-.Link:hover::after {
+.not-found-link:hover::after {
      width: 100%;
 }
 
-@keyframes aparecer {
-     0% {
-          opacity: 0;
-     }
-
-     100% {
-          opacity: 1;
-     }
-}
 
 @media (max-width: 37.5em) {
-
+     
 }
 
 @media (min-width: 37.6em) and (max-width: 64em) {
@@ -80,7 +72,7 @@
 @media (min-width: 64.1em) {
      .not-found-conteiner {
           box-shadow: 0 8px 16px rgba(0,0,0,0.5);
-          border-radius: 75px;
+          border-radius: 50px;
           background-color: rgba(0, 0, 0, 0.25);
      }
 }

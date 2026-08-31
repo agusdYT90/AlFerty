@@ -8,6 +8,7 @@
      height: 100vh;
      color: var(--letras-color3);
      z-index: 0;
+     overflow: hidden;
 }
 
 @media (max-width: 37.5em) {

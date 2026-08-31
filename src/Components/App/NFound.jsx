@@ -9,7 +9,7 @@ function NFound() {
                     <div className="not-found-conteiner">
                          <h2 className="not-found-error">ERROR 404</h2>
                          <h3 className="not-found-sub">Página no encontrada</h3>
-                         <Link to="/" className="Link">Ir a Inicio</Link>
+                         <Link to="/" className="not-found-link">Ir a Inicio</Link>
                     </div>
                </div>
           </>
