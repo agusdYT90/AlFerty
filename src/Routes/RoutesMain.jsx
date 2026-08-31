@@ -9,9 +9,9 @@ function RoutesMain() {
      return (
           <Router>
                <Routes>
-                    <Route element={<LayoutMain />}>
+                    <Route element={<LayoutMain/>}>
                          {RutasPublic.map(({ Direccion, Elemento }) => (
-                              <Route key={Direccion} path={Direccion} element={Elemento} />
+                              <Route key={Direccion} path={Direccion} element={Elemento}/>
                          ))}
                     </Route>
 
