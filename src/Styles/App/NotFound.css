@@ -4,7 +4,6 @@
      align-items: center;
      width: 100%;
      height: 100vh;
-     max-height: 100vh;
 }
 
 .not-found-conteiner {
@@ -17,19 +16,18 @@
      padding: 2%;
      transform: translateY(50px);
      animation: aparecer 1.5s ease-out forwards;
-     font-size: 2.5rem;
      overflow: hidden;
 }
 
 .not-found-error {
      color: var(--letras-color3);
      margin: 10px;
+     font-size: 4rem;
 }
 
 .not-found-sub {
      color: var(--letras-color3);
-     margin: 0;
-     font-size: 1.5rem;
+     font-size: 2rem;
      margin-bottom: 25%;
 }
 
@@ -40,6 +38,7 @@
      justify-content: center;
      text-decoration: none;
      color: var(--letras-color3);
+     font-size: 2rem;
 }
 
 .not-found-link::after {

@@ -8,6 +8,7 @@
      height: 100vh;
      color: var(--letras-color3);
      z-index: 0;
+     font-size: 5rem;
      overflow: hidden;
 }
 
