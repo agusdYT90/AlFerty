@@ -87,6 +87,7 @@
      .header-container {
           justify-content: center;
           gap: 25%;
+          width: 90%;
      }
 
      .menu {
@@ -98,6 +99,7 @@
      .header-container {
           justify-content: center;
           gap: 50%;
+          width: 70%;
      }
 
      .menu {
