@@ -1,11 +1,9 @@
-
 .nav ul {
      list-style: none;
      display: flex;
      flex-direction: row;
      justify-content: center;
      align-items: center;
-     text-align: center;
      padding: 0px;
      margin: 10px;
      gap: 10px;
@@ -17,9 +15,7 @@
      justify-content: center;
      text-decoration: none;
      padding: 5px;
-     color: var(--letras-color2);
-     font-size: var(--letras-link);
-     font-family: var(--letras-tipo1);
+     color: var(--letras-color3);
      position: relative;
 }
 
@@ -29,12 +25,12 @@
      bottom: -2px;
      width: 0;
      height: 2px;
-     background-color: var(--letras-color4);
+     background-color: var(--letras-color2);
      transition: width 0.3s ease-in-out;
 }
 
 .Link:hover {
-     color: var(--letras-color4);
+     color: var(--letras-color2);
      transition: color 0.3s ease-in-out;
 }
 
@@ -52,7 +48,7 @@
 }
 
 .img-perfil:hover {
-     border: 3px solid var(--fondo4);
+     border: 3px solid var(--fondo2);
 }
 
 /* ~600px */

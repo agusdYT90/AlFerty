@@ -1,10 +1,9 @@
-import Products from "../Components/Shop/Products.jsx";
 
 function Shop() {
 
      return (
           <>
-               <Products/>
+               <h1>Tienda</h1>
           </>
      );
 }

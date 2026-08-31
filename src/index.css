@@ -1,7 +1,11 @@
 :root {
     --letras-color1: #3e016a;
-    --letras-color2: #f8f8fa;
-    --letras-color3: #000000;
+    --letras-color2: #9500ff;
+    --letras-color3: #f8f8fa;
+    --letras-color4: #000000;
+
+    --extra1: #aaa;
+    --extra2: #333;
 
     --letras-link: 20px;
     --letras-title: 25px;
@@ -12,8 +16,9 @@
     --letras-tipo2: 'Roboto', sans-serif;
 
     --fondo1: #3e016a;
-    --fondo2: #f8f8fa;
-    --fondo3: #000000;
+    --fondo2: #9500ff;
+    --fondo3: #f8f8fa;
+    --fondo4: #000000;
 }
 
 body {
@@ -21,21 +26,20 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background: radial-gradient(circle at 50% 10%, #4b0082, #0a001a);
+    background: radial-gradient(circle at 50% 10%, var(--fondo1), var(--fondo4));
 }
 
 button {
     padding: 0.75rem 1.5rem;
-    background-color: var(--fondo1);
-    color: var(--fondo3);
+    margin: 0.75rem;
     font-size: 1rem;
-    font-weight: 500;
-    border: none;
     border-radius: 8px;
+    background-color: var(--fondo1);
+    color: var(--fondo4);
+    border: none;
     cursor: pointer;
-    margin: 5px;
     transition: background-color 0.5s ease-in-out;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
 }
 
 button:hover {
@@ -50,16 +54,16 @@ input {
     border-radius: 6px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     outline: none;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: var(--fondo1);
+    color: var(--extra2);
     margin: 20px;
 }
 
 input::placeholder {
-    color: #aaa;
+    color: var(--extra);
 }
 
 input:focus {
-    border-color: #3e016a;
+    border-color: var(--fondo1);
     box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.2);
 }

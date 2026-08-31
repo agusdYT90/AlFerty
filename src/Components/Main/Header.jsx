@@ -10,7 +10,7 @@ function Header({ Cambiar, Mostrar }) {
                <div className="header-container">
 
                     <Link to="/" className="logo">
-                         <img src={logo} alt="AlFerty" className="l1" />
+                         <img src={logo} alt="AlFerty" className="limg" />
                     </Link>
 
                     <Nav />

@@ -12,7 +12,7 @@ function LayoutMain() {
 
      useEffect(() => {
           const handleResize = () => {
-               if (window.innerWidth > 768 && mostrar) {
+               if (window.innerWidth > 1080 && mostrar) {
                     setMostrar(false);
                }
           };
